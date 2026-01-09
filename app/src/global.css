@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fish {
+	position: absolute;
+	left: -10%;
+	width: 50px;
+	height: auto;
+	filter: drop-shadow(0 4px 10px rgba(0, 91, 150, 0.25));
+	animation: swim var(--swim-duration, 35s) linear infinite;
+}
+
+@keyframes swim {
+	0% {
+		transform: translateX(0) scale(var(--fish-scale, 1));
+	}
+	100% {
+		transform: translateX(130vw) scale(var(--fish-scale, 1));
+	}
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+	animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+	animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+	animation-delay: 1.2s;
+}
+.wave-text span:nth-child(8) {
+	animation-delay: 1.4s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.photo-frame {
+	border: 8px solid white;
+	border-radius: 4px;
+}
+
+/** TODO: Finish Cursor: Reg have cursor no line, click have line, release catch fish? **/
+/* body {
+  cursor: url('../public/assets/rodnoline.png'), auto;
+}
+
+body:active {
+  cursor: url('../public/assets/rod.png'), auto;
+}
+
+button:hover,
+a:hover,
+li:hover {
+  cursor: url('../public/assets/rod.png'), auto !important;
+} */
