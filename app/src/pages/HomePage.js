@@ -30,7 +30,7 @@ const HomePage = () => {
 
     const navigate = useNavigate();
     return (
-        <div className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-sky-200 via-sky-300 to-sky-500 text-white">
+        <div className="relative min-h-screen w-screen overflow-hidden bg-gradient-to-b from-sky-200 via-sky-300 to-sky-500 text-white m-0 p-0 -ml-0">
             <div 
                 className="absolute inset-0 z-1 pointer-events-none"
                 style={{ 
@@ -68,7 +68,7 @@ const HomePage = () => {
             </div>
 
             <main className="relative flex h-[50%] items-center justify-center px-6">
-                <div className="max-w-2xl text-center drop-shadow-lg mt-[10rem]">
+                <div className="max-w-2xl text-center drop-shadow-lg mt-[14rem]">
                     <p className="text-sm uppercase tracking-[0.3em] text-sky-50/90">Gotta catch em' all</p>
                     <span className="mt-4 text-5xl font-semibold leading-tight text-white">
                         <span class="wave-text">
